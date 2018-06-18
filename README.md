@@ -1,4 +1,4 @@
-# Optmal production planning with multi-level (hard penalty approach)
+# Optimal production planning with multi-level (hard penalty approach)
 ##### An optimization test suite involving 108 continuous variables
 
 This submission can be used to evaluate the performance of optimization techniques on problems with continuous variables. This optimization problem arises for maximization of profit in production planning. However these files can be used as black-box optimization problems.
@@ -6,15 +6,15 @@ This submission can be used to evaluate the performance of optimization techniqu
 There are eight minimization optimization problems in this suite (case1.p, case2.p, case3.p, case4.p, case5.p, case6.p, case7.p and cas8.p). All the cases (Case 1 to Case 8) have a problem dimension of 108 continuous variables.
 
 Each of them follows hard penalty approach and has the following format
-
+```
 [ F ] = case1(X);
-
+```
 Input: population (or solution, denoted by X) and its 
 Output: objective function values (F) of the population members.
 
 The file ProblemDetails.p can be used to determine the lower and upper bounds along with the function handle for each of the cases.
 
-The format is [lb,ub,fobj] = ProblemDetails(n);
+The format is `[lb, ub, fobj] = ProblemDetails(n);`
 
 Input: n is an integer from 1 to 8. <br>
 Output: (i) the lower bound (lb), <br>
